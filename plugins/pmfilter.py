@@ -44,7 +44,7 @@ import tracemalloc
 # Enable tracemalloc
 tracemalloc.start()
 
-EMOJIS = [ "👀", "❤️", "🔥", "😍", "🎉", "🥰", "😇", "😱" ]
+#EMOJIS = [ "👀", "❤️", "🔥", "😍", "🎉", "🥰", "😇", "😱" ]
 TIMEZONE = "Asia/Kolkata"
 BUTTON = {}
 BUTTONS = {}
