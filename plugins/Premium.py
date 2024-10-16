@@ -11,7 +11,7 @@ from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-EMOJIS = [ "👀", "❤️", "🔥", "🎉", "🥰" ]
+#EMOJIS = [ "👀", "❤️", "🔥", "🎉", "🥰" ]
 
 @Client.on_message(filters.command("remove_premium") & filters.user(ADMINS))
 async def remove_premium(client, message):
@@ -31,7 +31,7 @@ async def remove_premium(client, message):
 
 @Client.on_message(filters.command("myplan"))
 async def myplan(client, message):
-    await message.react(emoji=random.choice(EMOJIS), big=True)
+#    await message.react(emoji=random.choice(EMOJIS), big=True)
     user = message.from_user.mention 
     user_id = message.from_user.id
     data = await db.get_user(message.from_user.id)  # Convert the user_id to integer
